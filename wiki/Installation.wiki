@@ -14,7 +14,15 @@ The Middler depends on the following Python modules:
 
 To use the plugin-metasploit.py plug-in, you'll want Metasploit.
 
-= Details =
+= Linux Module Installation =
+
+To install the necessary Python modules on Ubuntu Linux, we ran:
+
+{{{
+for package in scapy libpcap pcap python-libpcap python-readline libdnet libdnet-dev python-beautifulsoup ; do
+	apt-get install $package
+done
+}}}
 
 To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
 
