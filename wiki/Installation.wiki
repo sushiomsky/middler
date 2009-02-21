@@ -1,0 +1,28 @@
+#summary Installing The Middler and its dependencies on Linux, OS X and Windows.
+
+= Introduction =
+
+This page describes how to install The Middler on each operating system, including its dependencies.
+
+The Middler depends on the following modules:
+
+  * scapy 
+  * libpcap
+  * readline
+  * libdnet 
+  * beautifulsoup
+
+= Details =
+
+To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
+
+{{{
+sudo aptitude install ruby libruby rdoc libyaml-ruby libzlib-ruby libopenssl-ruby libdl-ruby libreadline-ruby libiconv-ruby rubygems
+}}}
+
+Of course, you'll want to download and install [http://www.metasploit.com Metasploit].
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
