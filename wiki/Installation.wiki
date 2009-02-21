@@ -4,13 +4,15 @@
 
 This page describes how to install The Middler on each operating system, including its dependencies.
 
-The Middler depends on the following modules:
+The Middler depends on the following Python modules:
 
   * scapy 
   * libpcap
   * readline
   * libdnet 
   * beautifulsoup
+
+To use the plugin-metasploit.py plug-in, you'll want Metasploit.
 
 = Details =
 
