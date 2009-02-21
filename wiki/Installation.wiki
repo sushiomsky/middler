@@ -12,9 +12,9 @@ The Middler depends on the following Python modules:
   * libdnet 
   * beautifulsoup
 
-To use the plugin-metasploit.py plug-in, you'll want Metasploit.
+To use the plugin-metasploit.py plug-in, you'll also need the [http://www.metasploit.com/framework/ the Metasploit Framework].
 
-= OS X Module Installation = 
+= Mac OS X Module Installation = 
 
 To install the necessary Python modules on OS X Leopard (10.5), we used MacPorts, a third party package system available for OS X.  Here's what we ran:
 
@@ -22,13 +22,14 @@ To install the necessary Python modules on OS X Leopard (10.5), we used MacPorts
 port install py25-beautifulsoup py25-libdnet py25-pylibpcap py25-readline
 }}}
 
-To install the Metasploit Framework, we used the instructions on [http://trac.metasploit.com/wiki/Metasploit3/InstallMacOSX Metasploit's OSX Instalation page.]
+To use the plugin-metasploit.py plug-in, you'll want to install the Metasploit Framework.  We used the instructions on [http://trac.metasploit.com/wiki/Metasploit3/InstallMacOSX Metasploit's Mac OS X Instalation page.]
 
-As it recommends, we used Ruby's Gems system, which lets you very easily fetch Ruby modules and their dependencies.  If you already have MacPorts installed, you might want to install Ruby and Gems through MacPorts.  Here are commands to do this: 
+As it recommends, we used Ruby's Gems system, which lets you very easily fetch Ruby modules and their dependencies.  If you already have MacPorts installed, you might want to install Ruby and Gems through MacPorts.  Here are commands to do this, including the version correction for Rails that the Metasploit Framework page suggests.
 
 {{{
 port install ruby rb-rubygems 
 gem install readline
+gem install -v=1.2.2 rails
 }}}
 
 To install 
