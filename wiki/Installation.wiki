@@ -6,8 +6,8 @@ This page describes how to install The Middler on each operating system, includi
 
 The Middler depends on the following Python modules:
 
-  * scapy 
-  * libpcap
+  * scapy
+  * libpcap  (known as libdumbnet in Debian and Ubuntu because of namespace conflict)
   * readline
   * libdnet 
   * beautifulsoup
