@@ -37,14 +37,12 @@ gem install readline
 gem install -v=1.2.2 rails
 }}}
 
-= Linux Module Installation =
+= Ubuntu/Debian Linux Module Installation =
 
-To install the necessary Python modules on Ubuntu Linux, we ran:
+To install the necessary Middler dependencies on Ubuntu or Debian Linux, run:
 
 {{{
-for package in scapy libpcap pcap python-libpcap python-readline libdnet libdnet-dev python-beautifulsoup ; do
-	apt-get install $package
-done
+sudo aptitude install libdnet-dev python-libpcap python-beautifulsoup python-scapy
 }}}
 
 To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
