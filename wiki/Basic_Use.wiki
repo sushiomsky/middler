@@ -2,8 +2,11 @@
 
 = Stable Command Line Options =
 
--i --ip         listen on IP  (default "127.0.0.1")
--p --port       listen on port  (default "80")
+-i --ip <br>
+listen on IP  (default "127.0.0.1")
+
+-p --port <br>
+listen on port  (default "80")
 
 = Command Line Options in a state of flux (and probably don't work) =
 
