@@ -42,7 +42,7 @@ gem install -v=1.2.2 rails
 To install the necessary Middler dependencies on Ubuntu or Debian Linux, run:
 
 {{{
-sudo aptitude install libdnet-dev python-libpcap python-beautifulsoup python-scapy
+sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy
 }}}
 
 To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
