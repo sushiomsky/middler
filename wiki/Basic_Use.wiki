@@ -1,0 +1,24 @@
+#summary Basic instructions on using Midder
+
+= Stable Command Line Options =
+
+-i --ip         listen on IP  (default "127.0.0.1")
+-p --port       listen on port  (default "80")
+
+= Command Line Options in a state of flux (and probably don't work) =
+
+-s --sslstrip
+change HTTPS links to HTTP, while sending data to the server over HTTPS
+
+-u --url
+URL to inject  (currently handled in plugins)
+
+-a --autopwn
+auto-p0wn browsers via Metasploit
+
+-r --redirect_via_arpspoof
+activate ARP spoofing to send out ARP replies claiming the router's IP address
+
+= Example of running Middler =
+
+sudo python middler.py 
