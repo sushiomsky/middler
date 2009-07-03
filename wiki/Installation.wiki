@@ -54,7 +54,13 @@ To install the necessary Middler dependencies on Ubuntu or Debian Linux, run:
 sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy
 }}}
 
-To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
+Then download Middler with:
+
+{{{
+svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only  
+}}}
+
+If you would like to play with the Metasploit or BEEF plugins, you'll need to install that software as well.  To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
 
 {{{
 sudo aptitude install ruby libruby rdoc libyaml-ruby libzlib-ruby libopenssl-ruby libdl-ruby libreadline-ruby libiconv-ruby rubygems
