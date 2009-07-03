@@ -22,6 +22,15 @@ To install the necessary Python modules on OS X Leopard (10.5), we used MacPorts
 port install py25-beautifulsoup py25-libdnet py25-pylibpcap py25-readline
 }}}
 
+If you prefer to avoid MacPorts, we strongly recommend Python's easy_install program, which is part of setuptools, the Python module package management system.
+
+{{{
+sudo easy_install pyreadline
+sudo easy_install BeautifulSoup
+sudo easy_install dnet??
+
+
+}}}
 
 Once that's done, you'll need Scapy for packet generation.  Here are the good instructions:
 
