@@ -1,6 +1,4 @@
  # Download the latest copy of Samurai-WTF at samurai.inguardians.com
  # Boot it up either from the live CD or from a virtual environment like VMware.
- # Install Middler's dependencies by running:
- * {{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}
- # Install Middler by running:
- * {{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}
+ # Install Middler's dependencies by running: <br> {{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}
+ # Install Middler by running: <br> {{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}
