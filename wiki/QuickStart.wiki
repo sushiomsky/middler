@@ -2,3 +2,4 @@
  # Boot it up either from the live CD or from a virtual environment like VMware.
  # Install Middler's dependencies by running: <br> {{{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}}
  # Install Middler by running: <br> {{{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}}
+ # Install dsniff so we can spoof ARP tables on victim machines (This functionality will be included in Middler within the next few weeks): <br> {{{sudo aptitude install dsniff}}}
