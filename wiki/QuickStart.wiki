@@ -3,3 +3,6 @@
  # Install Middler's dependencies by running: <br> {{{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}}
  # Install Middler by running: <br> {{{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}}
  # Install dsniff so we can spoof ARP tables on victim machines (This functionality will be included in Middler within the next few weeks): <br> {{{sudo aptitude install dsniff}}}
+ # Since middler needs to listen on port 80, shut down apache: <br> {{{sudo /etc/init.d/apache2 stop}}}
+ # Move into the Middler directory: <br> {{{cd middler-read-only}}}
+ # Start up Middler with: <br> {{{sudo ./middler.py}}}
