@@ -5,7 +5,7 @@
 == Stable Options ==
 
 -i --ip <br>
-listen on IP  (default "127.0.0.1")
+listen on IP  (default "0.0.0.0" or all IPs)
 
 -p --port <br>
 listen on port  (default "80")
