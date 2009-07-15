@@ -8,10 +8,10 @@ The Middler achieves its HTTP-based attacks primarily through plugins.  Some of 
 
 These plugins are currently "active" - they are in beta or have been released:
 
-* plugin_iframe_injection.py - Injects an IFRAME in the page that loads a 150x103 pixel version of The Middler logo.
-* plugin_30x_redirect.py - redirects requests for one page to another, currently www.cnn.com.
+  * plugin_iframe_injection.py - Injects an IFRAME in the page that loads a 150x103 pixel version of The Middler logo.
+  * plugin_30x_redirect.py - redirects requests for one page to another, currently www.cnn.com.
 
 These are the sites on which these plugins trigger:
 
-* plugin_iframe_injection.py - http://www.usbank.com/
-* plugin_30x_redirect.py - http://www.foxnews.com/
+  * plugin_iframe_injection.py - http://www.usbank.com/
+  * plugin_30x_redirect.py - http://www.foxnews.com/
