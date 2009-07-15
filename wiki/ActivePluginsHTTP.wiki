@@ -13,5 +13,5 @@ These plugins are currently "active" - they are in beta or have been released:
 
 These are the sites on which these plugins trigger:
 
-  * *plugin_iframe_injection.py* - http://www.usbank.com/
+  * *plugin_iframe_injection.py* - http://slashdot.org
   * *plugin_30x_redirect.py* - http://www.foxnews.com/
