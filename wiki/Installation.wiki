@@ -68,11 +68,6 @@ sudo aptitude install ruby libruby rdoc libyaml-ruby libzlib-ruby libopenssl-rub
 
 Of course, you'll want to download and install [http://www.metasploit.com Metasploit].
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
 = BackTrack 4 Pre-Release =
 
 Run the following:
