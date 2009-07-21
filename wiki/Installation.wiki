@@ -72,3 +72,14 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
+
+= BackTrack 4 Pre-Release =
+
+Run the following:
+
+{{{
+sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy
+svn co https://svn.bolloretelecom.eu/opensource/python-netfilter/trunk/ python-netfilter
+cd python-netfilter
+python setup.py install
+}}}
