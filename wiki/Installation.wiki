@@ -7,14 +7,41 @@ This page describes how to install The Middler on each operating system, includi
 The Middler depends on the following Python modules:
 
   * scapy
-  * libpcap  (known as libdumbnet in Debian and Ubuntu because of namespace conflict)
+  * libpcap
   * readline
-  * libdnet 
+  * libdnet  (known as libdumbnet in Debian and Ubuntu because of namespace conflict)
+  * netfilter  (For Linux)
   * beautifulsoup
 
 To use the plugin-metasploit.py plug-in, you'll also need the [http://www.metasploit.com/framework/ the Metasploit Framework].
 
-= Mac OS X Module Installation = 
+= Ubuntu/Debian/BT4 Linux Installation =
+
+To install the necessary Middler dependencies on Ubuntu or Debian Linux, run:
+
+{{{
+sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy
+svn co https://svn.bolloretelecom.eu/opensource/python-netfilter/trunk/ python-netfilter
+cd python-netfilter
+sudo python setup.py install
+cd ..
+}}}
+
+Then download Middler with:
+
+{{{
+svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only  
+}}}
+
+If you would like to play with the Metasploit or BEEF plugins, you'll need to install that software as well.  To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
+
+{{{
+sudo aptitude install ruby libruby rdoc libyaml-ruby libzlib-ruby libopenssl-ruby libdl-ruby libreadline-ruby libiconv-ruby rubygems
+}}}
+
+Of course, you'll want to download and install [http://www.metasploit.com Metasploit].
+
+= Mac OS X Installation = 
 
 To install the necessary Python modules on OS X Leopard (10.5), we used MacPorts, a third party package system available for OS X.  Here's what we ran:
 
@@ -44,37 +71,4 @@ As it recommends, we used Ruby's Gems system, which lets you very easily fetch R
 port install ruby rb-rubygems 
 gem install readline
 gem install -v=1.2.2 rails
-}}}
-
-= Ubuntu/Debian Linux Module Installation =
-
-To install the necessary Middler dependencies on Ubuntu or Debian Linux, run:
-
-{{{
-sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy
-}}}
-
-Then download Middler with:
-
-{{{
-svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only  
-}}}
-
-If you would like to play with the Metasploit or BEEF plugins, you'll need to install that software as well.  To install Metasploit, you'll need its dependencies.  Here's the command we used to install these on Ubuntu Linux:
-
-{{{
-sudo aptitude install ruby libruby rdoc libyaml-ruby libzlib-ruby libopenssl-ruby libdl-ruby libreadline-ruby libiconv-ruby rubygems
-}}}
-
-Of course, you'll want to download and install [http://www.metasploit.com Metasploit].
-
-= BackTrack 4 Pre-Release =
-
-Run the following:
-
-{{{
-sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy
-svn co https://svn.bolloretelecom.eu/opensource/python-netfilter/trunk/ python-netfilter
-cd python-netfilter
-python setup.py install
 }}}
