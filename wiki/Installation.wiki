@@ -77,25 +77,7 @@ Of course, you'll want to download and install [http://www.metasploit.com Metasp
 
 = Mac OS X Installation = 
 
-To install the necessary Python modules on OS X Leopard (10.5), we used MacPorts, a third party package system available for OS X.  Here's what we ran:
-
-{{{
-port install py25-beautifulsoup py25-libdnet py25-pylibpcap py25-readline
-}}}
-
-If you prefer to avoid MacPorts, we strongly recommend Python's easy_install program, which is part of setuptools, the Python module package management system.
-
-{{{
-sudo easy_install pyreadline
-sudo easy_install BeautifulSoup
-sudo easy_install dnet??
-
-
-}}}
-
-Once that's done, you'll need Scapy for packet generation.  Here are the good instructions:
-
-[http://www.secdev.org/projects/scapy/portability.html#osx Scapy's OS X Install page]
+To install the necessary Python modules on OS X Leopard (10.5), we downloaded Python 2.6.x from Python.org, then used the source installation methods above.  MacPorts has scapy, but gives it a massive number of unnecessary dependencies that take forever to compile. 
 
 To use the plugin-metasploit.py plug-in, you'll want to install the Metasploit Framework.  We used the instructions on [http://trac.metasploit.com/wiki/Metasploit3/InstallMacOSX Metasploit's Mac OS X Instalation page.]
 
