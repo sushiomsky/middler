@@ -6,7 +6,7 @@
  # Install dsniff so we can spoof ARP tables on victim machines (This functionality will be included in Middler within the next few weeks): <br> {{{sudo aptitude install dsniff}}}
  # Since middler needs to listen on port 80, shut down apache: <br> {{{sudo /etc/init.d/apache2 stop}}}
 
-== Getting Set Up On Your Own Machine == 
+= Getting Set Up On Your Own Machine =
 #. Install Python 2.6.x.
 
 #. Download and install dsniff to allow The Middler to ARP spoof.
