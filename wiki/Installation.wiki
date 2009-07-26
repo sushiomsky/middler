@@ -4,16 +4,50 @@
 
 This page describes how to install The Middler on each operating system, including its dependencies.
 
-The Middler depends on the following Python modules:
+The Middler requires Python 2.6.
+
+The Middler depends only on core Python modules, except to generate its own ARP spoofing packets.  
+
+To generate ARP spoofing packets, you have two options: install dsniff or install scapy, along with scapy's dependencies.  All of the instructions below, except the Easy Source Install, assume that you want to use scapy.
+
+= Dependencies =
+
+If you elect to let The Middler use dsniff to arpspoof, you need only install dsniff.
+
+If you want The Middler to use scapy, you need to install the following scapy dependencies, all Python modules:
 
   * scapy
   * libpcap
   * readline
   * libdnet  (known as libdumbnet in Debian and Ubuntu because of namespace conflict)
-  * netfilter  (For Linux)
-  * beautifulsoup
 
 To use the plugin-metasploit.py plug-in, you'll also need the [http://www.metasploit.com/framework/ the Metasploit Framework].
+
+To use the plugin-beef.py plug-in, you'll need the [http://www.bindshell.net/tools/beef/ BeEF Browser Exploitation Framework]. 
+
+= Easy Installation From Source with Dsniff =
+
+1. Install Python 2.6.x.
+
+2. Download and install dsniff to allow The Middler to ARP spoof.
+
+2a. To let The Middler run dsniff's arpspoof, get the latest source from [http://monkey.org/~dugsong/dsniff/ dsniff's page].  Here's a direct link to [http://monkey.org/~dugsong/dsniff/dsniff-2.3.tar.gz dsniff 2.3 (stable)].  On Mac OSX, we found the 2+ year old beta, [http://monkey.org/~dugsong/dsniff/beta/dsniff-2.4b1.tar.gz dsniff-2.4b1.tar.gz Dsniff 2.4 Beta 1] to work better.
+
+3. On Linux, install the Netfilter Python module.  This dependency is going away.  You can download [http://opensource.bolloretelecom.eu/files/python-netfilter-0.5.6.tar.gz this stable source] or do a Subversion checkout.
+ 
+
+= Harder Installation from Source with Scapy =
+
+1. Install Python 2.6.
+
+2. To make The Middler generate its own ARP spoofing packets via scapy, download the latest source from [http://www.secdev.org/projects/scapy/ scapy's web page].  The latest release should be available directly via [http://www.secdev.org/projects/scapy/files/scapy-latest.zip Scapy-Latest]. 
+
+3. Install Python modules 
+
+  * libpcap
+  * readline
+  * libdnet  (known as libdumbnet in Debian and Ubuntu because of namespace conflict)
+
 
 = Ubuntu/Debian/BT4 Linux Installation =
 
