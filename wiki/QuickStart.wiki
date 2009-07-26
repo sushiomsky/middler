@@ -7,7 +7,16 @@
  # Since middler needs to listen on port 80, shut down apache: <br> {{{sudo /etc/init.d/apache2 stop}}}
 
 == Getting Set Up On Your Own Machine == 
-# Use the Easy Source Installation instructions from the Installation wiki page.
+#. Install Python 2.6.x.
+
+#. Download and install dsniff to allow The Middler to ARP spoof.
+
+#. To let The Middler run dsniff's arpspoof, get the latest source from dsniff's page. Here's a direct link to dsniff 2.3 (stable). On Mac OSX, we found the 2+ year old beta, dsniff-2.4b1.tar.gz Dsniff 2.4 Beta 1 to work better.
+
+#. On Linux, install the Netfilter Python module. This dependency is going away. You can download this stable source or do a Subversion checkout.
+
+#  Install Middler by running: <br> {{{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}}
+
 
 = Playing with Middler =
  # Move into the Middler's directory: <br> {{{cd middler-read-only}}}
