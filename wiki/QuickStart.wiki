@@ -1,10 +1,13 @@
-= Getting Set Up =
+= (Higher Bandwidth) Getting Set Up Using the Samurai WTF Bootable Linux Distribution =
  # Download the latest copy of Samurai-WTF at samurai.inguardians.com
  # Boot Samurai-WTF from the live CD or from a virtual environment like VMware.
  # Install Middler's dependencies by opening a terminal and running: <br> {{{sudo aptitude install libdumbnet-dev python-libpcap python-beautifulsoup python-scapy}}}
  # Install Middler by running: <br> {{{svn checkout http://middler.googlecode.com/svn/trunk/ middler-read-only}}}
  # Install dsniff so we can spoof ARP tables on victim machines (This functionality will be included in Middler within the next few weeks): <br> {{{sudo aptitude install dsniff}}}
  # Since middler needs to listen on port 80, shut down apache: <br> {{{sudo /etc/init.d/apache2 stop}}}
+
+== Getting Set Up On Your Own Machine == 
+# Use the Easy Source Installation instructions from the Installation wiki page.
 
 = Playing with Middler =
  # Move into the Middler's directory: <br> {{{cd middler-read-only}}}
