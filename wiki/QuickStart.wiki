@@ -22,6 +22,5 @@
  # Move into the Middler's directory: <br> {{{cd middler-read-only}}}
  # Start up Middler with: <br> {{{sudo ./middler.py}}}
  # Choose a victim computer (or start a second VM to pick on)
- # On the machine running Middler, start an arpspoof attack against your victim: <br> {{{arpspoof -i <interface> -t <victim_ip> <gateway_ip>}}}
  # On the victim machine, verify the gateway's MAC address is being spoofed: <br> {{{arp -n}}}
- # On the victim machine, open a browser and surf to www.frog.com
+ # On the victim machine, open a browser and surf to www.slashdot.org
